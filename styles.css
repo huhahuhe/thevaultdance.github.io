@@ -1,0 +1,580 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .get-started-btn {
+    background-color: #ff00cc !important;
+    color: #fff !important;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #ff33cc !important;
+    box-shadow: 0 0 15px #ff00cc, 0 0 30px #ff00cc;
+  }
+  
+  
+  
+  /* Header */
+  header {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: #f90;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  #hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  #hero p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  #hero button {
+    padding: 10px 20px;
+    background: #f90;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  #hero button:hover {
+    background: #ffa733;
+  }
+  
+  /* Section Basics */
+  section {
+    padding: 60px 0;
+  }
+  section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  section p, .class-list {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-image,
+  .about-text {
+    flex: 1 1 400px;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 168, 0.5);
+    overflow: hidden;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .about-text {
+    background: linear-gradient(135deg, rgba(255,0,168,0.15), rgba(0,0,0,0.6));
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 30px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px rgba(255, 0, 144, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about-text strong {
+    color: #ff80df;
+    font-weight: bold;
+  }
+  
+  .about-section h2 {
+    font-size: 40px;
+    color: #ff00a8;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  @media (max-width: 900px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image,
+    .about-text {
+      width: 100%;
+      max-width: 90%;
+      height: auto;
+    }
+  }
+  
+  
+  
+  
+  
+  /* Classes */
+  .class-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .class-list li {
+    background: #eee;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  
+  /* Gallery */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact-section {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    color: #ff2edf;
+    margin-bottom: 40px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-details, .registration-form-box {
+    flex: 1 1 400px;
+  }
+  
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-details li {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .contact-details a {
+    color: #ff2edf;
+    text-decoration: none;
+  }
+  
+  .registration-form-box h3 {
+    color: #ff2edf;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .registration-form label {
+    font-size: 16px;
+  }
+  
+  .registration-form input,
+  .registration-form select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .registration-form button {
+    background-color: #ff2edf;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .registration-form button:hover {
+    background-color: #e026c3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
+  
+  /* Footer */
+  footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  #hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+  }
+  
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* darkens the image */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #ddd;
+  }
+  
+  .hero-content button {
+    padding: 15px 30px;
+    background: #f90;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-content button:hover {
+    background: #ffa733;
+  }
+
+  .classes-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* allows it to wrap nicely on small screens */
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .class-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* or remove this if you want them all forced in one row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .class-card {
+    width: 180px;
+    text-align: center;
+    background-color: #000; /* black background */
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .class-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff00ff; /* neon pink underline */
+  }
+  
+  .class-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .class-name {
+    color: #ff00ff; /* neon pink */
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  
+  
+
+  .contact-icons i {
+    color: #ff2edf;
+    margin-right: 10px;
+    width: 20px;
+  }
+  
+  .contact-icons li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-icons a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-icons a:hover {
+    color: #ff2edf;
+  }
+  
+  .map-box {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* General background and text color */
+body {
+  background-color: #000000; /* black */
+  color:rgb(218, 74, 189); /* neon pink */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #ff00cc;
+}
+
+/* Paragraphs */
+p {
+  color: #ffffff;
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #ff00cc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #e600ac;
+  color: #fff;
+}
+
+/* Links */
+a {
+  color: #ff00cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Input Fields */
+input, textarea, select {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #ff00cc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Form Labels */
+label {
+  color: #ff00cc;
+}
+
+/* Navbar, Footer, Cards, Sections etc. */
+.section, .navbar, footer, .card {
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Icons */
+i {
+  color: #ff00cc;
+}
+
+body {
+  background: linear-gradient(to bottom, #000000, #1a001a);
+}
+ 
+form {
+  background-color: #111; /* Slightly lighter black */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  color: #ff00cc; /* Neon pink */
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #222; /* dark grey instead of black */
+  color: #fff; /* white text */
+  border: 1px solid #ff00cc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form input::placeholder {
+  color: #bbb;
+}
+
+form button {
+  background-color: #ff00cc;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e600ac;
+  color: #fff;
+}
+
+.reels-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.reel-video {
+  width: 250px;
+  height: 444px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 0, 144, 0.4);
+}
+
