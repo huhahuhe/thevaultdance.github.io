@@ -15,6 +15,42 @@
     max-width: 1100px;
     margin: auto;
   }
+  
+  /*mobile responsive*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  .about {
+  display: flex;
+  flex-direction: column; /* Stacks content on mobile */
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .about img {
+    max-width: 50%;
+    margin-right: 2rem;
+  }
+}
+
+  
+
+
+
 
   .get-started-btn {
     background-color: #ff00cc !important;
@@ -63,12 +99,17 @@
   
   /* Hero Section */
   #hero {
-    background: url('images/background.jpg') no-repeat center center/cover;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
+    //background: url('images/background.jpg') no-repeat center center/cover;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
   }
   #hero h2 {
     font-size: 3rem;
@@ -106,7 +147,7 @@
     text-align: center;
   }
 
-  .about-container {
+  /* .about-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -177,7 +218,52 @@
       max-width: 90%;
       height: auto;
     }
+  } */
+
+  /* ABOUT SECTION */
+.about {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.about-content h2 {
+  color: #ff00ff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+/* Optional spacing for desktop */
+@media (min-width: 768px) {
+  .about-content {
+    text-align: center;
   }
+}
+
   
   
   
@@ -577,4 +663,6 @@ form button:hover {
   object-fit: cover;
   box-shadow: 0 0 20px rgba(255, 0, 144, 0.4);
 }
+
+
 
